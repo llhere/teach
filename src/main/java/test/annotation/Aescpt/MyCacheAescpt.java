@@ -16,7 +16,7 @@ public class MyCacheAescpt {
 	public Jedis jedis = new Jedis();
 
 	@Around("annotation(test.annotation.program.AppleProgram)")
-	public Apple queryAppleCache(ProceedingJoinPoint joinPoint) { 
+	public Apple queryAppleCache(ProceedingJoinPoint joinPoint) {
 		
 		System.out.println("方法执行前");
 		
